@@ -33,7 +33,12 @@ registered_routes = [
 
 """
 
-registered_routes = []
+from api.modules.pets.routes import routes as pet_routes
+
+
+registered_routes = [
+    pet_routes
+]
 
 
 def register_routes(routes, app):
